@@ -9,13 +9,15 @@ body {
     background-image: url("/images/background.jpg");
     background-size: cover;
     background-position: center;
-    
+
 }
 
 /* Layout container */
 .main {
     display: flex;
     height: 100vh;
+ 
+
 }
 
 /* Left Panel - Weather Info */
@@ -78,10 +80,10 @@ body {
 
 /* Center Panel - Weather Icon */
 .center {
-    width: 30%;
+    width: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .iconmain {
@@ -102,7 +104,7 @@ body {
     width: 30%;
     margin: 20px;
     padding: 20px;
-    background-color: #1e1e1e;
+    /* background-color: #1e1e1e; */
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
     height: 90vh;
