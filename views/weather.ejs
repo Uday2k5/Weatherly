@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather for <%= weather.city %></title>
+</head>
+<body>
+    <h1>Weather in <%= weather.city %></h1>
+    <p>Temperature: <%= weather.temp %>°C</p>
+    <p>Condition: <%= weather.description %></p>
+    <img src="https://openweathermap.org/img/wn/<%= weather.icon %>@2x.png" alt="weather icon">
+    <br><br>
+    <a href="/">Check another city</a>
+</body>
+</html>
