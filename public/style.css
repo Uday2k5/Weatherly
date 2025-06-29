@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f8ff;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;*/
+ 
+  margin: 2rem;
+  flex-direction: column; 
+  background-image: url("/back.jpg");
+}
+
+.mainh {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
