@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <title>Weather for <%= weather.city %></title>
@@ -12,4 +12,40 @@
     <br><br>
     <a href="/">Check another city</a>
 </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather for <%= weather.city %></title>
+    <!--<link rel="stylesheet" href="/style.css">-->
+    <link rel="stylesheet" href="/weather.css">
+</head>
+<body class="weather-body">
+          <header>   </header>
+        <div class="main">
+            <div class = "leftpanel">
+                <div class="temp"> <h2 > <b><%= weather.temp %></b><sup>°C</sup> </h2></div>
+                <div class="weatherdesc"> <h3>  <%= weather.description %></h3></div>
+                <div class="weatherhumid">
+                     <h3><img src="/images/wind.png" alt=""> <span>Wind</span> <%= weather.wind %> m/s </h3>
+                     <h3><img src="/images/humidity.png" alt=""> <span>Humidity</span> <%= weather.humidity %> % </h3>
+                 </div>
+            </div>
+
+            <div class="center">
+               <img src="https://openweathermap.org/img/wn/<%= weather.icon %>@4x.png" alt="weather icon" class="iconmain">  
+             </div> 
+
+
+            <div class="rightpanel ">
+                This is daily forecast probably
+            </div>
+            
+          
+        </div>
+
+</body>
 </html>
+
